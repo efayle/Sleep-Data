@@ -61,6 +61,12 @@ namespace SleepData
                 // check if file exists
                 if (File.Exists("data.txt")) {
 
+                    StreamReader sr = new StreamReader("data.txt");
+
+                    while (!sr.EndOfStream) {
+
+                    }
+                    sr.Close();
                 } else {
                     Console.WriteLine("This file does not exist");
                 }
