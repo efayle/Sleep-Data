@@ -79,6 +79,11 @@ namespace SleepData
                         // using Linq - convert array to int
                         String[] array1 = array[1].Split('|');
                         int[] arr = array1.Select(int.Parse).ToArray();
+
+                        // week average and total
+                        int arrTotal = arr.Sum();
+                        double average = arrTotal / 7.0;
+                        double arrAverage = Math.Round(average, 1);
                     }
                     sr.Close();
                 } else {
