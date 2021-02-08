@@ -58,6 +58,13 @@ namespace SleepData
             {
                 // TODO: parse data file
 
+                // check if file exists
+                if (File.Exists("data.txt")) {
+
+                } else {
+                    Console.WriteLine("This file does not exist");
+                }
+
             }
         }
     }
