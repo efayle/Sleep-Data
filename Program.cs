@@ -84,6 +84,9 @@ namespace SleepData
                         int arrTotal = arr.Sum();
                         double average = arrTotal / 7.0;
                         double arrAverage = Math.Round(average, 1);
+
+                        // display hours of sleep, average, and total
+                        Console.WriteLine($"{array1[0],3}{array1[1],3}{array1[2],3}{array1[3],3}{array1[4],3}{array1[5],3}{array1[6],3}{arrTotal,4}{arrAverage,4}");
                     }
                     sr.Close();
                 } else {
