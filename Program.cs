@@ -65,6 +65,10 @@ namespace SleepData
 
                     while (!sr.EndOfStream) {
 
+                        // Convert string array to "DateTime" data type
+                        string line = sr.ReadLine();
+                        String[] array = line.Split(',');
+                        DateTime parsedDate = DateTime.Parse(array[0]);
                     }
                     sr.Close();
                 } else {
