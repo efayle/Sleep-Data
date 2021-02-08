@@ -69,6 +69,11 @@ namespace SleepData
                         string line = sr.ReadLine();
                         String[] array = line.Split(',');
                         DateTime parsedDate = DateTime.Parse(array[0]);
+
+                        // Display week headings
+                        Console.WriteLine($"Week of {parsedDate:MMM, dd, yyyy}");
+                        Console.WriteLine($"{"Mo",3}{"Tu",3}{"We",3}{"Th",3}{"Fr",3}{"Sa",3}{"Su",3}{"Tot",4}{"Avg",4}");
+                        Console.WriteLine($"{"--",3}{"--",3}{"--",3}{"--",3}{"--",3}{"--",3}{"--",3}{"---",4}{"---",4}");
                     }
                     sr.Close();
                 } else {
